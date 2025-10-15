@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
-#body_sobre {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: Arial, sans-serif;   
+.sobre_grupo {
+    width: 700px;
+    height: 500px;
+    margin: 150px auto; 
+    padding: 80px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
 }
 
 body, html {
@@ -25,6 +28,15 @@ h1 {
     transition: color 0.3s ease;
     margin-left: 10px;
 }
+
+#esquerda {
+    text-align: left;
+}
+
+.return {
+    text-align: center;
+    padding: 250px;
+  }
 
 p {
     color: rgb(0, 0, 0);
@@ -64,6 +76,18 @@ p a {
     transition: color 0.3s ease;
 }
 
+h1 a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+h1 a:hover{
+    color: #00bfff;
+}
+
+
 p a:hover {
     color: #00bfff;
 }
@@ -78,9 +102,40 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../imgs/dog.gif") center center / cover no-repeat;
+    background: url("dog.gif") center center / cover no-repeat;
     z-index: -2;
 }
+
+.background-gif-bio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("science_dog.gif") center center / cover no-repeat;
+    z-index: -2;
+}
+
+.background-gif-grupo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("fish_dog.gif") center center / cover no-repeat;
+    z-index: -2;
+}
+
+.background-gif-materiais {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("scared_dog.gif") center center / cover no-repeat;
+    z-index: -2;
+}
+
 
 .overlay {
     position: fixed;
@@ -104,7 +159,6 @@ video {
     max-width: 80%;
     max-height: 70vh;
     border-radius: 20px;
-    border: none;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 

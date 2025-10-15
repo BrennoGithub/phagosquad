@@ -4,27 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/static/imgs/icone.png" type="image/x-icon">
 </head>
 <body>
     <!-- NAV -->
     <nav>
         <ul>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/biomaket">Biomaket</a></li>
-            <li><a href="/materiais">Materiais</a></li>
+            <li><a href="#" class="sessao">Sobre</a></li>
+            <li><a href="#" class="sessao">Biomaket</a></li>
+            <li><a href="#" class="sessao">Materiais</a></li>
         </ul>
     </nav>
 
-    <!-- CONTEÚDO -->
-    <div class="overlay"></div>
-    <div class="video-container">
-        <video controls>
-            <source src="{{ url_for('static', filename='videos/projeto.mp4') }}" type="video/mp4">
-        </video>
-    </div>
-
-    <!-- FUNDO -->
-    <div class="background-gif"></div>
+    <div id="conteudoPagina"></div>
+    <script src="/static/js/roteamento.js"></script>
 </body>
 </html>

@@ -15,24 +15,54 @@ function Roteamento(titulo, pagina){
 
     const sobre = `
     <div>
-        <h1>Conheça a <strong>Phagosquad</strong></h1>
-        <p> 
-            A <strong>Phagosquad</strong> é o grupo que apresentará o trabalho sobre a relação entre
-            Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
-            de produzir uma <a href="/templates/biomaket.html">Bio-maket</a> e este lindíssimo site.
-        </p>
+        <div class="overlay"></div>
+        <div class="sobre_grupo">
+            <h1>Conheça a <strong><a href="#" class="sessao">Phagosquad</a></strong></h1>
+            <p>
+                A Phagosquad é o grupo que apresentará o trabalho sobre a relação entre
+                Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
+                de produzir uma <strong><a href="#">Bio-maket</a></strong> e este lindíssimo site.
+            </p>
+            <br/>
+                <hr>
+            <br/>
+            <img src="/static/imgs/leococito.png" alt="Imagem Teste">
+        </div>
     </div>`;
 
     const materiais = `
     <div>
-        <h1>Materiais</h1>
-        <p> Lista de materiais aqui </p>
+        <div class="overlay"></div>
+        <div class="sobre_grupo">
+            <h1>Lista de Materiais</h1>
+            <hr>
+            <p id="esquerda">
+                1- Nome do material — Preço
+                <br/>
+                2- Nome do material — Preço
+                <br/>
+                3- Nome do material — Preço
+                <br/>
+                4- Nome do material — Preço
+                <br/>
+                5- Nome do material — Preço
+            </p>
+    </div>
+
+    <div class="background-gif-materiais"></div>
     </div>`;
 
     const biomarket = `
     <div>
+        <div class="overlay"></div>
+    <div class="sobre_grupo">
         <h1>Bio-Maket</h1>
-        <p>Sobre a Bio-Maket + Foto dela</p>
+        <p>
+            Foto da Bio-Maket aqui
+        </p>
+    </div>
+
+    <div class="background-gif-bio"></div>
     </div>`;
 
     switch(titulo){
@@ -53,11 +83,18 @@ function Roteamento(titulo, pagina){
 
 const pagina = document.getElementById("conteudoPagina");
 
-Roteamento("", pagina);
+document.addEventListener("DOMContentLoaded", ()=>{
+    Roteamento("", pagina);
+})
 
 const sessoes = document.querySelectorAll(".sessao");
 sessoes.forEach( topico => {
+    if(topico.style.fontWeight == "bold"){
+        topico.style.fontWeight = "normal";
+    }
+
     topico.addEventListener("click", function(){
+        topico.style.fontWeight = "bold";
         const titulo = topico.textContent;
         Roteamento(titulo, pagina);
     });

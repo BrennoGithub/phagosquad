@@ -1,5 +1,20 @@
+function Sessoes(){
+    const sessoes = document.querySelectorAll(".sessao");
+    sessoes.forEach( topico => {
+    if(topico.style.fontWeight == "bold"){
+        topico.style.fontWeight = "normal";
+    }
+
+    topico.addEventListener("click", function(){
+        topico.style.fontWeight = "bold";
+        const titulo = topico.textContent;
+        Roteamento(titulo, pagina);
+    });
+});
+}
+
 function Roteamento(titulo, pagina){
-    const pagina_inicial = `
+    const inicial = `
     <div>
         <!-- CONTEÚDO -->
         <div class="overlay"></div>
@@ -17,15 +32,13 @@ function Roteamento(titulo, pagina){
     <div>
         <div class="overlay"></div>
         <div class="sobre_grupo">
-            <h1>Conheça a <strong><a href="#" class="sessao">Phagosquad</a></strong></h1>
-            <p>
-                A Phagosquad é o grupo que apresentará o trabalho sobre a relação entre
-                Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
-                de produzir uma <strong><a href="#">Bio-maket</a></strong> e este lindíssimo site.
-            </p>
-            <br/>
+            <h1>Conheça a Phagosquad</h1>
                 <hr>
-            <br/>
+            <p>
+                A <strong><a href="#" class="sessao">Phagosquad</a></strong> é o grupo que apresentará o trabalho sobre a relação entre
+                Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
+                de produzir uma <strong><a href="#" class="sessao">Biomaket</a></strong> e este lindíssimo site.
+            </p>
             <img src="/static/imgs/leococito.png" alt="Imagem Teste">
         </div>
     </div>`;
@@ -35,18 +48,15 @@ function Roteamento(titulo, pagina){
         <div class="overlay"></div>
         <div class="sobre_grupo">
             <h1>Lista de Materiais</h1>
-            <hr>
-            <p id="esquerda">
-                1- Nome do material — Preço
-                <br/>
-                2- Nome do material — Preço
-                <br/>
-                3- Nome do material — Preço
-                <br/>
-                4- Nome do material — Preço
-                <br/>
-                5- Nome do material — Preço
-            </p>
+                <hr>
+            <ol id="esquerda">
+                    <li class="itemLista">Nome do material — Preço</li>
+                    <li class="itemLista">Nome do material — Preço</li>
+                    <li class="itemLista">Nome do material — Preço</li>
+                    <li class="itemLista">Nome do material — Preço</li>
+                    <li class="itemLista">Nome do material — Preço</li>
+            </ol>
+        </div>
     </div>
 
     <div class="background-gif-materiais"></div>
@@ -57,6 +67,7 @@ function Roteamento(titulo, pagina){
         <div class="overlay"></div>
     <div class="sobre_grupo">
         <h1>Bio-Maket</h1>
+            <hr>
         <p>
             Foto da Bio-Maket aqui
         </p>
@@ -68,34 +79,26 @@ function Roteamento(titulo, pagina){
     switch(titulo){
         case "Sobre":
             pagina.innerHTML = sobre;
+            Sessoes();
             break;
         case "Biomaket":
             pagina.innerHTML = biomarket;
+            Sessoes();
             break;
         case "Materiais":
             pagina.innerHTML = materiais;
+            Sessoes();
             break;
         default:
-            pagina.innerHTML = pagina_inicial
+            pagina.innerHTML = inicial
+            Sessoes();
             break;
     }
 }
 
 const pagina = document.getElementById("conteudoPagina");
 
-document.addEventListener("DOMContentLoaded", ()=>{
-    Roteamento("", pagina);
+document.addEventListener("DOMContentLoaded", () => {
+    Roteamento("", pagina); 
 })
-
-const sessoes = document.querySelectorAll(".sessao");
-sessoes.forEach( topico => {
-    if(topico.style.fontWeight == "bold"){
-        topico.style.fontWeight = "normal";
-    }
-
-    topico.addEventListener("click", function(){
-        topico.style.fontWeight = "bold";
-        const titulo = topico.textContent;
-        Roteamento(titulo, pagina);
-    });
-});
+Sessoes();

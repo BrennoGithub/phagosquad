@@ -70,7 +70,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: #E62727;
     padding: 1rem 0;
     z-index: 10;
 }
@@ -89,7 +89,7 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     transition: color 0.3s ease;
 }
 
@@ -108,7 +108,7 @@ h1 a {
 }
 
 h1 a:hover{
-    color: #00bfff;
+    color: #CBDCEB;
 }
 
 hr{
@@ -121,7 +121,7 @@ p a:hover {
 }
 
 nav a:hover {
-    color: #00bfff;
+    color: #FEB21A;
 }
 
 .background-gif {

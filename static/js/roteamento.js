@@ -21,7 +21,7 @@ function Roteamento(titulo, pagina){
             <p>
                 A Phagosquad é o grupo que apresentará o trabalho sobre a relação entre
                 Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
-                de produzir uma <strong><a href="biomaket.html">Bio-maket</a></strong> e este lindíssimo site.
+                de produzir uma <strong><a href="#">Bio-maket</a></strong> e este lindíssimo site.
             </p>
             <br/>
                 <hr>
@@ -83,11 +83,18 @@ function Roteamento(titulo, pagina){
 
 const pagina = document.getElementById("conteudoPagina");
 
-Roteamento("", pagina);
+document.addEventListener("DOMContentLoaded", ()=>{
+    Roteamento("", pagina);
+})
 
 const sessoes = document.querySelectorAll(".sessao");
 sessoes.forEach( topico => {
+    if(topico.style.fontWeight == "bold"){
+        topico.style.fontWeight = "normal";
+    }
+
     topico.addEventListener("click", function(){
+        topico.style.fontWeight = "bold";
         const titulo = topico.textContent;
         Roteamento(titulo, pagina);
     });

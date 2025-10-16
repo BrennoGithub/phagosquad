@@ -1,17 +1,21 @@
-function Sessoes(){
+function Sessoes(sessao){
     const sessoes = document.querySelectorAll(".sessao");
     sessoes.forEach( topico => {
-    if(topico.style.fontWeight == "bold"){
-        topico.style.fontWeight = "normal";
-    }
+        topico.addEventListener("click", function(event){
+            event.preventDefault();
+            sessoes.forEach(outroTop => {
+                outroTop.style.fontWeight = "normal";
+            })
 
-    topico.addEventListener("click", function(){
-        topico.style.fontWeight = "bold";
-        const titulo = topico.textContent;
-        Roteamento(titulo, pagina);
+            topico.style.fontWeight = "bold";
+
+            const titulo = topico.textContent;
+            if (titulo != sessao){
+                Roteamento(titulo, pagina);
+            }
+        });
     });
-});
-}
+};
 
 function Roteamento(titulo, pagina){
     const inicial = `
@@ -41,6 +45,7 @@ function Roteamento(titulo, pagina){
             </p>
             <img src="/static/imgs/leococito.png" alt="Imagem Teste">
         </div>
+        <div class="background-gif-grupo"></div>
     </div>`;
 
     const materiais = `
@@ -79,19 +84,19 @@ function Roteamento(titulo, pagina){
     switch(titulo){
         case "Sobre":
             pagina.innerHTML = sobre;
-            Sessoes();
+            Sessoes(titulo);
             break;
         case "Biomaket":
             pagina.innerHTML = biomarket;
-            Sessoes();
+            Sessoes(titulo);
             break;
         case "Materiais":
             pagina.innerHTML = materiais;
-            Sessoes();
+            Sessoes(titulo);
             break;
         default:
             pagina.innerHTML = inicial
-            Sessoes();
+            Sessoes(titulo);
             break;
     }
 }
@@ -101,4 +106,7 @@ const pagina = document.getElementById("conteudoPagina");
 document.addEventListener("DOMContentLoaded", () => {
     Roteamento("", pagina); 
 })
-Sessoes();
+
+//Deixa a sessao inicial em negrito
+document.querySelector(".sessao").style.fontWeight = "bold";
+Sessoes("Inicial");

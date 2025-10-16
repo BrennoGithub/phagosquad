@@ -8,10 +8,14 @@
     width: 700px;
     height: 500px;
     margin: 150px auto; 
-    padding: 80px;
+    padding: 60px;
     text-align: center;
     background-color: white;
     border-radius: 20px;
+}
+
+img{
+    border-radius: 10px;
 }
 
 body, html {
@@ -31,12 +35,26 @@ h1 {
 
 #esquerda {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.itemLista{
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
 
 .return {
     text-align: center;
     padding: 250px;
-  }
+}
 
 p {
     color: rgb(0, 0, 0);
@@ -44,6 +62,8 @@ p {
     font-size: 1.1rem;
     transition: color 0.3s ease;
     margin-left: 10px;
+    margin-bottom: 12px;
+    font-family: Arial, sans-serif;
 }
 
 nav {
@@ -91,6 +111,10 @@ h1 a:hover{
     color: #00bfff;
 }
 
+hr{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
 
 p a:hover {
     color: #00bfff;

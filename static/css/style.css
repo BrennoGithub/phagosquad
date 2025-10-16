@@ -55,6 +55,10 @@ nav {
     z-index: 10;
 }
 
+.sessao{
+    font-weight: normal;
+}
+
 nav ul {
     display: flex;
     justify-content: center;

@@ -36,6 +36,7 @@ function Roteamento(titulo, pagina){
     <div>
         <div class="overlay"></div>
         <div class="sobre_grupo">
+            <br/>
             <h1>Conheça a Phagosquad</h1>
                 <hr>
             <p>
@@ -44,6 +45,8 @@ function Roteamento(titulo, pagina){
                 de produzir uma <strong><a href="#" class="sessao">Biomaket</a></strong> e este lindíssimo site.
             </p>
             <img src="/static/imgs/leococito.png" alt="Imagem Teste">
+            <br/>
+            <br/>
         </div>
         <div class="background-gif-grupo"></div>
     </div>`;
@@ -52,6 +55,7 @@ function Roteamento(titulo, pagina){
     <div>
         <div class="overlay"></div>
         <div class="sobre_grupo">
+            <br/>
             <h1>Lista de Materiais</h1>
                 <hr>
             <ol id="esquerda">
@@ -71,11 +75,13 @@ function Roteamento(titulo, pagina){
     <div>
         <div class="overlay"></div>
     <div class="sobre_grupo">
+        <br/>
         <h1>Bio-Maket</h1>
             <hr>
         <p>
             Foto da Bio-Maket aqui
         </p>
+        <br/>
     </div>
 
     <div class="background-gif-bio"></div>

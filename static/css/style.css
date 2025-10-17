@@ -226,7 +226,7 @@ video {
     width: 60px;
     height: 60px;
     border: 6px solid #ccc;
-    border-top-color: #09f;
+    border-top-color:  #E62727;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin-bottom: 10px;

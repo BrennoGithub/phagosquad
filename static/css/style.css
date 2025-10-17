@@ -130,7 +130,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("/static/imgs/dog.gif") center center / cover no-repeat;
+    background: url("/static/imgs/DNA.gif") center center / cover no-repeat;
     z-index: -2;
 }
 
@@ -140,7 +140,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("/static/imgs/science_dog.gif") center center / cover no-repeat;
+    background: url("/static/imgs/leocócitos.gif") center center / cover no-repeat;
     z-index: -2;
 }
 
@@ -150,7 +150,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("/static/imgs/fish_dog.gif") center center / cover no-repeat;
+    background: url("/static/imgs/DNA_GENES.gif") center center / cover no-repeat;
     z-index: -2;
 }
 
@@ -160,7 +160,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("/static/imgs/scared_dog.gif") center center / cover no-repeat;
+    background: url("/static/imgs/transporte.gif") center center / cover no-repeat;
     z-index: -2;
 }
 

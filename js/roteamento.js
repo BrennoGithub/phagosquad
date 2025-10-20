@@ -1,4 +1,4 @@
-function Sessoes(sessao){
+async function Sessoes(sessao){
     const sessoes = document.querySelectorAll(".sessao");
     sessoes.forEach( topico => {
         topico.addEventListener("click", function(event){
@@ -19,7 +19,7 @@ function Sessoes(sessao){
     });
 };
 
-function Roteamento(titulo, pagina){
+async function Roteamento(titulo, pagina){
     const inicial = `
     <div>
         <!-- CONTEÚDO -->
@@ -92,27 +92,27 @@ function Roteamento(titulo, pagina){
     switch(titulo){
         case "Sobre":
             pagina.innerHTML = sobre;
-            Sessoes(titulo);
+            await Sessoes(titulo);
             break;
         case "Biomaket":
             pagina.innerHTML = biomarket;
-            Sessoes(titulo);
+            await Sessoes(titulo);
             break;
         case "Materiais":
             pagina.innerHTML = materiais;
-            Sessoes(titulo);
+            await Sessoes(titulo);
             break;
         default:
             pagina.innerHTML = inicial
-            Sessoes(titulo);
+            await Sessoes(titulo);
             break;
     }
 }
 
 const pagina = document.getElementById("conteudoPagina");
 
-document.addEventListener("DOMContentLoaded", () => {
-    Roteamento("", pagina); 
+document.addEventListener("DOMContentLoaded", async () => {
+    await Roteamento("", pagina); 
 })
 
 //Deixa a sessao inicial em negrito

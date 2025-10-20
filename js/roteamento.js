@@ -1,13 +1,15 @@
-function Sessoes(sessao){
+async function Sessoes(sessao){
     const sessoes = document.querySelectorAll(".sessao");
     sessoes.forEach( topico => {
         topico.addEventListener("click", function(event){
             event.preventDefault();
             sessoes.forEach(outroTop => {
                 outroTop.style.fontWeight = "normal";
+                outroTop.style.fontSize = "1.3rem";
             })
 
             topico.style.fontWeight = "bold";
+            topico.style.fontSize = "1.5rem";
 
             const titulo = topico.textContent;
             if (titulo != sessao){
@@ -17,7 +19,7 @@ function Sessoes(sessao){
     });
 };
 
-function Roteamento(titulo, pagina){
+async function Roteamento(titulo, pagina){
     const inicial = `
     <div>
         <!-- CONTEÚDO -->
@@ -90,29 +92,30 @@ function Roteamento(titulo, pagina){
     switch(titulo){
         case "Sobre":
             pagina.innerHTML = sobre;
-            Sessoes(titulo);
+            await Sessoes(titulo);
             break;
         case "Biomaket":
             pagina.innerHTML = biomarket;
-            Sessoes(titulo);
+            await Sessoes(titulo);
             break;
         case "Materiais":
             pagina.innerHTML = materiais;
-            Sessoes(titulo);
+            await Sessoes(titulo);
             break;
         default:
             pagina.innerHTML = inicial
-            Sessoes(titulo);
+            await Sessoes(titulo);
             break;
     }
 }
 
 const pagina = document.getElementById("conteudoPagina");
 
-document.addEventListener("DOMContentLoaded", () => {
-    Roteamento("", pagina); 
+document.addEventListener("DOMContentLoaded", async () => {
+    await Roteamento("", pagina); 
 })
 
 //Deixa a sessao inicial em negrito
 document.querySelector(".sessao").style.fontWeight = "bold";
+document.querySelector(".sessao").style.fontSize = "1.5rem";
 Sessoes("Inicial");

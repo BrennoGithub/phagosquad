@@ -5,9 +5,11 @@ function Sessoes(sessao){
             event.preventDefault();
             sessoes.forEach(outroTop => {
                 outroTop.style.fontWeight = "normal";
+                outroTop.style.fontSize = "1.3rem";
             })
 
             topico.style.fontWeight = "bold";
+            topico.style.fontSize = "1.5rem";
 
             const titulo = topico.textContent;
             if (titulo != sessao){
@@ -115,4 +117,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Deixa a sessao inicial em negrito
 document.querySelector(".sessao").style.fontWeight = "bold";
+document.querySelector(".sessao").style.fontSize = "1.5rem";
 Sessoes("Inicial");

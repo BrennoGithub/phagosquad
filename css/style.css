@@ -82,6 +82,9 @@ nav {
 
 .sessao{
     font-weight: normal;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
 }
 
 nav ul {
@@ -126,7 +129,7 @@ p a:hover {
 }
 
 nav a:hover {
-    color: #FEB21A;
+    background-color: #FF3F33;
 }
 
 .background-gif {

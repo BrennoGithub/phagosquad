@@ -44,7 +44,7 @@ function Roteamento(titulo, pagina){
                 Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
                 de produzir uma <strong><a href="#" class="sessao">Biomaket</a></strong> e este lindíssimo site.
             </p>
-            <img src="imgs/leococito.png" alt="Imagem Teste">
+            <img src="imgs/Phagosquad_logo.ico" alt="Logo Phagosquad">
             <br/>
             <br/>
         </div>

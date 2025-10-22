@@ -3,13 +3,22 @@ async function Sessoes(sessao){
     sessoes.forEach( topico => {
         topico.addEventListener("click", function(event){
             event.preventDefault();
+
+            if(topico.textContent != "Inicial"){
+                document.querySelector(".sessao").style.fontWeight = "normal";
+                document.querySelector(".sessao").style.fontSize = "16px";
+                document.querySelector(".sessao").style.backgroundColor = "#E62727";
+            }
+            
             sessoes.forEach(outroTop => {
                 outroTop.style.fontWeight = "normal";
-                outroTop.style.fontSize = "1.3rem";
+                outroTop.style.fontSize = "16px";
+                outroTop.style.backgroundColor = "#E62727";
             })
 
             topico.style.fontWeight = "bold";
-            topico.style.fontSize = "1.5rem";
+            topico.style.fontSize = "18px";
+            topico.style.backgroundColor = "#FF3F33";
 
             const titulo = topico.textContent;
             if (titulo != sessao){
@@ -117,5 +126,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 //Deixa a sessao inicial em negrito
 document.querySelector(".sessao").style.fontWeight = "bold";
-document.querySelector(".sessao").style.fontSize = "1.5rem";
+document.querySelector(".sessao").style.fontSize = "18px";
+document.querySelector(".sessao").style.backgroundColor = "#FF3F33";
 Sessoes("Inicial");

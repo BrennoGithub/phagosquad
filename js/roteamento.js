@@ -30,73 +30,65 @@ async function Sessoes(sessao){
 
 async function Roteamento(titulo, pagina){
     const inicial = `
-    <div>
-        <!-- CONTEÚDO -->
-        <div class="overlay"></div>
-        <div class="video-container">
-            <video controls>
-                <source src="videos/projeto.mp4" type="video/mp4">
-            </video>
-        </div>
+    <!-- CONTEÚDO -->
+    <div class="overlay"></div>
+    <div class="video-container">
+        <video controls>
+            <source src="videos/projeto.mp4" type="video/mp4">
+        </video>
+    </div>
 
-        <!-- FUNDO -->
-        <div class="background-gif"></div>
-    </div>`;
+    <!-- FUNDO -->
+    <div class="background-gif"></div>`;
 
     const sobre = `
-    <div>
-        <div class="overlay"></div>
-        <div class="sobre_grupo">
-            <br/>
+    <div class="overlay"></div>
+    <div class="sobre_grupo">
+        <div class="head">
             <h1>Conheça a Phagosquad</h1>
-                <hr>
+        </div>
+        <div class="body">
             <p>
-                A <strong><a href="#" class="sessao">Phagosquad</a></strong> é o grupo que apresentará o trabalho sobre a relação entre
-                Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
-                de produzir uma <strong><a href="#" class="sessao">Biomaket</a></strong> e este lindíssimo site.
+            A <em>Phagosquad</em> é o grupo que apresentará o trabalho sobre a relação entre
+            Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
+            de produzir uma <em>Biomaket</em> e este lindíssimo site.
             </p>
             <img src="imgs/Phagosquad_logo.ico" alt="Logo Phagosquad">
-            <br/>
-            <br/>
         </div>
-        <div class="background-gif-grupo"></div>
-    </div>`;
+    </div>
+    <div class="background-gif-grupo"></div>`;
 
     const materiais = `
-    <div>
-        <div class="overlay"></div>
-        <div class="sobre_grupo">
-            <br/>
+    <div class="overlay"></div>
+    <div class="sobre_grupo">
+        <div class="head">
             <h1>Lista de Materiais</h1>
-                <hr>
+        </div>
+        <div class="body">
             <ol id="esquerda">
-                    <li class="itemLista">Nome do material — Preço</li>
-                    <li class="itemLista">Nome do material — Preço</li>
-                    <li class="itemLista">Nome do material — Preço</li>
-                    <li class="itemLista">Nome do material — Preço</li>
-                    <li class="itemLista">Nome do material — Preço</li>
+                <li class="itemLista">Nome do material — Preço</li>
+                <li class="itemLista">Nome do material — Preço</li>
+                <li class="itemLista">Nome do material — Preço</li>
+                <li class="itemLista">Nome do material — Preço</li>
+                <li class="itemLista">Nome do material — Preço</li>
             </ol>
         </div>
     </div>
-
-    <div class="background-gif-materiais"></div>
-    </div>`;
+    <div class="background-gif-materiais"></div>`;
 
     const biomarket = `
-    <div>
-        <div class="overlay"></div>
+    <div class="overlay"></div>
     <div class="sobre_grupo">
-        <br/>
-        <h1>Bio-Maket</h1>
-            <hr>
-        <p>
+        <div class="head">
+            <h1>Bio-Maket</h1>
+        </div>
+        <div class="body">
+            <p>
             Foto da Bio-Maket aqui
-        </p>
-        <br/>
+            </p>
+        </div>
     </div>
-
-    <div class="background-gif-bio"></div>
-    </div>`;
+    <div class="background-gif-bio"></div>`;
 
     switch(titulo){
         case "Sobre":

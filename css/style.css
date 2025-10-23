@@ -18,6 +18,12 @@ img{
     border-radius: 10px;
 }
 
+.logo_load {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
 #logo{
     width: 12%;
     height: 12%;
@@ -227,13 +233,14 @@ video {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    margin: auto;
 }
 
 /* Animação do spinner */
 .spinner {
-    width: 60px;
-    height: 60px;
-    border: 6px solid #ccc;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ccc;
     border-top-color:  #E62727;
     border-radius: 50%;
     animation: spin 1s linear infinite;

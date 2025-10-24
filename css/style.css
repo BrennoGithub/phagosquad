@@ -14,6 +14,19 @@
     border-radius: 20px;
 }
 
+.head{
+    padding: 10px;
+    border-bottom: solid 1px gray;
+    justify-content: center;
+    align-content: center;
+}
+
+.body{
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
 img{
     border-radius: 10px;
 }
@@ -70,7 +83,15 @@ h1 {
 p {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.body li{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
     transition: color 0.3s ease;
     margin-left: 10px;
     margin-bottom: 12px;
@@ -128,10 +149,6 @@ h1 a:hover{
 hr{
     margin-top: 12px;
     margin-bottom: 12px;
-}
-
-p a:hover {
-    color: #00bfff;
 }
 
 nav a:hover {
@@ -194,7 +211,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding-top: 4rem; 
+    
 }
 
 video {

@@ -26,6 +26,20 @@ img{
     border-radius: 10px;
 }
 
+.head{
+    padding: 10px;
+    border-bottom: solid 1px gray;
+    justify-content: center;
+    align-content: center;
+}
+
+.body{
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+
 .logo_load {
     width: 150px;
     height: 150px;
@@ -36,6 +50,7 @@ img{
     width: 12%;
     height: 12%;
 }
+
 
 body, html {
     width: 100%;

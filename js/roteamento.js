@@ -47,14 +47,24 @@ async function Roteamento(titulo, pagina){
     <div>
         <div class="overlay"></div>
         <div class="sobre_grupo">
-            <br/>
+            <div class="head">
             <h1>Conheça a Phagosquad</h1>
-                <hr>
+            </div>
+        <div class="body">
             <p>
-                A <strong><a href="#" class="sessao">Phagosquad</a></strong> é o grupo que apresentará o trabalho sobre a relação entre
+                A<a href="#" class="sessao">Phagosquad</a>é o grupo que apresentará o trabalho sobre a relação entre
                 Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
-                de produzir uma <strong><a href="#" class="sessao">Biomaket</a></strong> e este lindíssimo site.
+                de produzir uma<a href="#" class="sessao">Biomaket</a>e este lindíssimo site.
             </p>
+            <p>
+                Os leucócitos, também conhecidos como glóbulos brancos, são células do sangue responsáveis pela 
+                defesa do organismo. Fazem parte do sistema imunológico, combatendo microrganismos invasores, 
+                toxinas e células anormais. São fundamentais para a imunidade e para manter o corpo livre de 
+                infecções. Seu processo é conhecido como Endocitose, quando a célula engole partículas do meio externo, 
+                envolvendo sua membrana plasmática Este mecanismo de transporte de massa se divide em fagocitose 
+                (englobar partículas sólidas grandes), pinocitose (ingestão de fluidos e partículas pequenas) 
+                e endocitose mediada por receptor (captação específica de moléculas).
+            <p/>
             <img src="imgs/Phagosquad_logo.ico" alt="Logo Phagosquad">
             <br/>
             <br/>
@@ -66,9 +76,10 @@ async function Roteamento(titulo, pagina){
     <div>
         <div class="overlay"></div>
         <div class="sobre_grupo">
-            <br/>
+            <div class="head">
             <h1>Lista de Materiais</h1>
-                <hr>
+            </div>
+        <div class="body">
             <ol id="esquerda">
                     <li class="itemLista">Papelão grosso (base)</li>
                     <li class="itemLista">Papel alumínio</li>
@@ -94,11 +105,11 @@ async function Roteamento(titulo, pagina){
     <div>
         <div class="overlay"></div>
     <div class="sobre_grupo">
-        <br/>
+        <div class="head">
         <h1>Bio-Maket</h1>
-            <hr>
-        <img src="imgs/Prototipo.jpg" alt="Prototipo" id="prototipo">
-        <br/>
+        </div>
+        <div class="body">
+        <img src="imgs/Prototipo.jpg" alt="Prototipo" id="prototipo"> </div>
     </div>
 
     <div class="background-gif-bio"></div>

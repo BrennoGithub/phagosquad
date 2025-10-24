@@ -70,11 +70,19 @@ async function Roteamento(titulo, pagina){
             <h1>Lista de Materiais</h1>
                 <hr>
             <ol id="esquerda">
-                    <li class="itemLista">Nome do material — Preço</li>
-                    <li class="itemLista">Nome do material — Preço</li>
-                    <li class="itemLista">Nome do material — Preço</li>
-                    <li class="itemLista">Nome do material — Preço</li>
-                    <li class="itemLista">Nome do material — Preço</li>
+                    <li class="itemLista">Papelão grosso (base)</li>
+                    <li class="itemLista">Papel alumínio</li>
+                    <li class="itemLista">Fitas vermelhos</li>
+                    <li class="itemLista">Massa de modelar branca, roxa e verde</li>
+                    <li class="itemLista">Palito de churrasco</li>
+                    <li class="itemLista">Papel/placas</li>
+                    <li class="itemLista">Adesivos</li>
+                    <li class="itemLista">Cola quente</li>
+                    <li class="itemLista">Tesoura/estilete</li>
+                    <li class="itemLista">Tinta</li>
+                    <li class="itemLista">Papel Machê</li>
+                    <li class="itemLista">Veniz</li>
+                    <li class="itemLista">Ímas</li>                                        
             </ol>
         </div>
     </div>
@@ -89,9 +97,7 @@ async function Roteamento(titulo, pagina){
         <br/>
         <h1>Bio-Maket</h1>
             <hr>
-        <p>
-            Foto da Bio-Maket aqui
-        </p>
+        <img src="imgs/Prototipo.jpg" alt="Prototipo" id="prototipo">
         <br/>
     </div>
 

@@ -31,19 +31,9 @@ img{
     border-radius: 10px;
 }
 
-.head{
-    padding: 10px;
-    border-bottom: solid 1px gray;
-    justify-content: center;
-    align-content: center;
+#prototipo {
+    width: 90%;
 }
-
-.body{
-    padding: 10px;
-    justify-content: center;
-    align-content: center;
-}
-
 
 .logo_load {
     width: 150px;
@@ -124,6 +114,7 @@ nav {
 
 .sessao{
     font-weight: normal;
+    font-size: 16px;
     padding: 5px 10px;
     border-radius: 5px;
     

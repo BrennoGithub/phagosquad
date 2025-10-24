@@ -6,18 +6,15 @@ async function Sessoes(sessao){
 
             if(topico.textContent != "Inicial"){
                 document.querySelector(".sessao").style.fontWeight = "normal";
-                document.querySelector(".sessao").style.fontSize = "16px";
                 document.querySelector(".sessao").style.backgroundColor = "#E62727";
             }
             
             sessoes.forEach(outroTop => {
                 outroTop.style.fontWeight = "normal";
-                outroTop.style.fontSize = "16px";
                 outroTop.style.backgroundColor = "#E62727";
             })
 
             topico.style.fontWeight = "bold";
-            topico.style.fontSize = "18px";
             topico.style.backgroundColor = "#FF3F33";
 
             const titulo = topico.textContent;
@@ -54,6 +51,7 @@ async function Roteamento(titulo, pagina){
                     Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
                     de produzir uma <a href="#" class="sessao"><strong>Biomaket</strong></a> e este lindíssimo site.
                 </p>
+                    <br>
                 <p>
                     Os leucócitos, também conhecidos como glóbulos brancos, são células do sangue responsáveis pela 
                     defesa do organismo. Fazem parte do sistema imunológico, combatendo microrganismos invasores, 
@@ -67,7 +65,7 @@ async function Roteamento(titulo, pagina){
             </div>
         </div>
     </div>
-    <div class="background-gif-grupo"></div>`;
+    <div class="background-gif-grupo"></div>`; //Ajeitar <a href="#" class="sessao"><strong>Biomaket</strong></a>
 
     const materiais = `
     <div>
@@ -77,6 +75,7 @@ async function Roteamento(titulo, pagina){
                 <h1>Lista de Materiais</h1>
             </div>
             <div class="body">
+                <p></p>
                 <ol id="esquerda">
                     <li class="itemLista">Papelão grosso (base)</li>
                     <li class="itemLista">Papel alumínio</li>
@@ -104,6 +103,7 @@ async function Roteamento(titulo, pagina){
             <h1>Bio-Maket</h1>
         </div>
         <div class="body">
+            <p></p>
             <img src="imgs/Prototipo.jpg" alt="Prototipo" id="prototipo"> 
         </div>
     </div>
@@ -124,6 +124,9 @@ async function Roteamento(titulo, pagina){
             break;
         default:
             pagina.innerHTML = inicial
+            //Deixa a sessao inicial em negrito
+            document.querySelector(".sessao").style.fontWeight = "bold";
+            document.querySelector(".sessao").style.backgroundColor = "#FF3F33";
             await Sessoes(titulo);
             break;
     }
@@ -135,8 +138,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     await Roteamento("", pagina); 
 })
 
-//Deixa a sessao inicial em negrito
-document.querySelector(".sessao").style.fontWeight = "bold";
-document.querySelector(".sessao").style.fontSize = "18px";
-document.querySelector(".sessao").style.backgroundColor = "#FF3F33";
 Sessoes("Inicial");

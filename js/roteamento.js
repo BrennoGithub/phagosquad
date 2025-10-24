@@ -6,18 +6,18 @@ async function Sessoes(sessao){
 
             if(topico.textContent != "Inicial"){
                 document.querySelector(".sessao").style.fontWeight = "normal";
-                document.querySelector(".sessao").style.fontSize = "16px";
+                document.querySelector(".sessao").style.fontSize = "15px";
                 document.querySelector(".sessao").style.backgroundColor = "#E62727";
             }
             
             sessoes.forEach(outroTop => {
                 outroTop.style.fontWeight = "normal";
-                outroTop.style.fontSize = "16px";
+                outroTop.style.fontSize = "15px";
                 outroTop.style.backgroundColor = "#E62727";
             })
 
             topico.style.fontWeight = "bold";
-            topico.style.fontSize = "18px";
+            topico.style.fontSize = "16px";
             topico.style.backgroundColor = "#FF3F33";
 
             const titulo = topico.textContent;
@@ -65,6 +65,7 @@ async function Roteamento(titulo, pagina){
             <h1>Lista de Materiais</h1>
         </div>
         <div class="body">
+            <p></p>
             <ol id="esquerda">
                 <li class="itemLista">Nome do material — Preço</li>
                 <li class="itemLista">Nome do material — Preço</li>
@@ -118,6 +119,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 //Deixa a sessao inicial em negrito
 document.querySelector(".sessao").style.fontWeight = "bold";
-document.querySelector(".sessao").style.fontSize = "18px";
+document.querySelector(".sessao").style.fontSize = "16px";
 document.querySelector(".sessao").style.backgroundColor = "#FF3F33";
 Sessoes("Inicial");

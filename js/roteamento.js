@@ -1,32 +1,4 @@
-async function Sessoes(sessao){
-    const sessoes = document.querySelectorAll(".sessao");
-    sessoes.forEach( topico => {
-        topico.addEventListener("click", function(event){
-            event.preventDefault();
-
-            if(topico.textContent != "Inicial"){
-                document.querySelector(".sessao").style.fontWeight = "normal";
-                document.querySelector(".sessao").style.backgroundColor = "#E62727";
-            }
-            
-            sessoes.forEach(outroTop => {
-                outroTop.style.fontWeight = "normal";
-                outroTop.style.backgroundColor = "#E62727";
-            })
-
-            topico.style.fontWeight = "bold";
-            topico.style.backgroundColor = "#FF3F33";
-
-            const titulo = topico.textContent;
-            if (titulo != sessao){
-                Roteamento(titulo, pagina);
-            }
-        });
-    });
-};
-
-async function Roteamento(titulo, pagina){
-    const inicial = `
+const inicial = `
     <!-- CONTEÚDO -->
     <div class="overlay"></div>
     <div class="video-container">
@@ -38,7 +10,7 @@ async function Roteamento(titulo, pagina){
     <!-- FUNDO -->
     <div class="background-gif"></div>`;
 
-    const sobre = `
+const sobre = `
     <div>
         <div class="overlay"></div>
         <div class="sobre_grupo">
@@ -47,9 +19,9 @@ async function Roteamento(titulo, pagina){
             </div>
             <div class="body">
                 <p>
-                    A <a href="#" class="sessao"><strong>Phagosquad</strong></a> é o grupo que apresentará o trabalho sobre a relação entre
+                    A <span class="sessao linkSessao">Phagosquad</span> é o grupo que apresentará o trabalho sobre a relação entre
                     Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
-                    de produzir uma <a href="#" class="sessao"><strong>Biomaket</strong></a> e este lindíssimo site.
+                    de produzir uma <span class="sessao linkSessao">Biomaket</span> e este lindíssimo site.
                 </p>
                     <br>
                 <p>
@@ -67,7 +39,7 @@ async function Roteamento(titulo, pagina){
     </div>
     <div class="background-gif-grupo"></div>`; //Ajeitar <a href="#" class="sessao"><strong>Biomaket</strong></a>
 
-    const materiais = `
+const materiais = `
     <div>
         <div class="overlay"></div>
         <div class="sobre_grupo">
@@ -96,7 +68,7 @@ async function Roteamento(titulo, pagina){
     </div>
     <div class="background-gif-materiais"></div>`;
 
-    const biomarket = `
+const biomarket = `
     <div class="overlay"></div>
     <div class="sobre_grupo">
         <div class="head">
@@ -109,6 +81,28 @@ async function Roteamento(titulo, pagina){
     </div>
     <div class="background-gif-bio"></div>`;
 
+async function Sessoes(){
+    const sessoes = document.querySelectorAll(".sessao");
+    sessoes.forEach( topico => {
+        topico.addEventListener("click", function(event){
+            event.preventDefault();
+
+            sessoes.forEach(outroTop => {
+                outroTop.style.fontWeight = "normal";
+                outroTop.style.backgroundColor = "#E62727";
+            })
+
+            topico.style.fontWeight = "bold";
+            topico.style.backgroundColor = "#FF3F33";
+
+            const titulo = topico.textContent;
+            Roteamento(titulo, pagina);
+            
+        });
+    });
+};
+
+async function Roteamento(titulo, pagina){
     switch(titulo){
         case "Sobre":
             pagina.innerHTML = sobre;
@@ -116,6 +110,8 @@ async function Roteamento(titulo, pagina){
             break;
         case "Biomaket":
             pagina.innerHTML = biomarket;
+            sessoes[2].style.fontWeight = "bold";
+            sessoes[2].style.backgroundColor = "#FF3F33";
             await Sessoes(titulo);
             break;
         case "Materiais":
@@ -124,7 +120,6 @@ async function Roteamento(titulo, pagina){
             break;
         default:
             pagina.innerHTML = inicial
-            //Deixa a sessao inicial em negrito
             document.querySelector(".sessao").style.fontWeight = "bold";
             document.querySelector(".sessao").style.backgroundColor = "#FF3F33";
             await Sessoes(titulo);
@@ -136,6 +131,5 @@ const pagina = document.getElementById("conteudoPagina");
 
 document.addEventListener("DOMContentLoaded", async () => {
     await Roteamento("", pagina); 
+    Sessoes();
 })
-
-Sessoes("Inicial");

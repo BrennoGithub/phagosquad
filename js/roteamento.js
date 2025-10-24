@@ -42,36 +42,57 @@ async function Roteamento(titulo, pagina){
     <div class="background-gif"></div>`;
 
     const sobre = `
-    <div class="overlay"></div>
-    <div class="sobre_grupo">
-        <div class="head">
-            <h1>Conheça a Phagosquad</h1>
-        </div>
-        <div class="body">
-            <p>
-            A <em>Phagosquad</em> é o grupo que apresentará o trabalho sobre a relação entre
-            Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
-            de produzir uma <em>Biomaket</em> e este lindíssimo site.
-            </p>
-            <img src="imgs/Phagosquad_logo.ico" alt="Logo Phagosquad">
+    <div>
+        <div class="overlay"></div>
+        <div class="sobre_grupo">
+            <div class="head">
+                <h1>Conheça a Phagosquad</h1>
+            </div>
+            <div class="body">
+                <p>
+                    A <a href="#" class="sessao"><strong>Phagosquad</strong></a> é o grupo que apresentará o trabalho sobre a relação entre
+                    Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
+                    de produzir uma <a href="#" class="sessao"><strong>Biomaket</strong></a> e este lindíssimo site.
+                </p>
+                <p>
+                    Os leucócitos, também conhecidos como glóbulos brancos, são células do sangue responsáveis pela 
+                    defesa do organismo. Fazem parte do sistema imunológico, combatendo microrganismos invasores, 
+                    toxinas e células anormais. São fundamentais para a imunidade e para manter o corpo livre de 
+                    infecções. Seu processo é conhecido como Endocitose, quando a célula engole partículas do meio externo, 
+                    envolvendo sua membrana plasmática Este mecanismo de transporte de massa se divide em fagocitose 
+                    (englobar partículas sólidas grandes), pinocitose (ingestão de fluidos e partículas pequenas) 
+                    e endocitose mediada por receptor (captação específica de moléculas).
+                <p/>
+                <img src="imgs/Phagosquad_logo.ico" alt="Logo Phagosquad">
+            </div>
         </div>
     </div>
     <div class="background-gif-grupo"></div>`;
 
     const materiais = `
-    <div class="overlay"></div>
-    <div class="sobre_grupo">
-        <div class="head">
-            <h1>Lista de Materiais</h1>
-        </div>
-        <div class="body">
-            <ol id="esquerda">
-                <li class="itemLista">Nome do material — Preço</li>
-                <li class="itemLista">Nome do material — Preço</li>
-                <li class="itemLista">Nome do material — Preço</li>
-                <li class="itemLista">Nome do material — Preço</li>
-                <li class="itemLista">Nome do material — Preço</li>
-            </ol>
+    <div>
+        <div class="overlay"></div>
+        <div class="sobre_grupo">
+            <div class="head">
+                <h1>Lista de Materiais</h1>
+            </div>
+            <div class="body">
+                <ol id="esquerda">
+                    <li class="itemLista">Papelão grosso (base)</li>
+                    <li class="itemLista">Papel alumínio</li>
+                    <li class="itemLista">Fitas vermelhos</li>
+                    <li class="itemLista">Massa de modelar branca, roxa e verde</li>
+                    <li class="itemLista">Palito de churrasco</li>
+                    <li class="itemLista">Papel/placas</li>
+                    <li class="itemLista">Adesivos</li>
+                    <li class="itemLista">Cola quente</li>
+                    <li class="itemLista">Tesoura/estilete</li>
+                    <li class="itemLista">Tinta</li>
+                    <li class="itemLista">Papel Machê</li>
+                    <li class="itemLista">Veniz</li>
+                    <li class="itemLista">Ímas</li>                                        
+                </ol>
+            </div>
         </div>
     </div>
     <div class="background-gif-materiais"></div>`;
@@ -83,9 +104,7 @@ async function Roteamento(titulo, pagina){
             <h1>Bio-Maket</h1>
         </div>
         <div class="body">
-            <p>
-            Foto da Bio-Maket aqui
-            </p>
+            <img src="imgs/Prototipo.jpg" alt="Prototipo" id="prototipo"> 
         </div>
     </div>
     <div class="background-gif-bio"></div>`;

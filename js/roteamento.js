@@ -52,9 +52,9 @@ async function Roteamento(titulo, pagina){
             </div>
         <div class="body">
             <p>
-                A<a href="#" class="sessao">Phagosquad</a>é o grupo que apresentará o trabalho sobre a relação entre
+                A <a href="#" class="sessao"><strong>Phagosquad</strong></a> é o grupo que apresentará o trabalho sobre a relação entre
                 Leucócitos, Endocitose e Diapedese. Somos do Info 3V do campus Parnamirim e ficamos com a responsabilidade
-                de produzir uma<a href="#" class="sessao">Biomaket</a>e este lindíssimo site.
+                de produzir uma <a href="#" class="sessao"><strong>Biomaket</strong></a> e este lindíssimo site.
             </p>
             <p>
                 Os leucócitos, também conhecidos como glóbulos brancos, são células do sangue responsáveis pela 

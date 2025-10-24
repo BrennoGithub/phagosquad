@@ -11,18 +11,18 @@
     margin: 200px auto;
     text-align: center;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .head{
-    padding: 10px;
+    padding: 20px;
     border-bottom: solid 1px gray;
     justify-content: center;
     align-content: center;
 }
 
 .body{
-    padding: 10px;
+    padding: 20px;
     justify-content: center;
     align-content: center;
 }
@@ -115,8 +115,17 @@ nav {
     font-weight: normal;
     padding: 5px 8px;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 16px;
     
+}
+
+.linkSessao{
+    font-weight: bold;
+    padding: 0px;
+}
+
+.linkSessao:hover{
+    color: rgb(62, 128, 226);
 }
 
 nav ul {

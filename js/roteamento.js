@@ -31,8 +31,9 @@ const sobre = `
             <img src="imgs/Phagosquad_logo.ico" alt="Logo Phagosquad">
             <p>
                 A <span class="sessao linkSessao">Phagosquad</span> é o grupo que apresentará o trabalho sobre a relação entre
-                Leucócitos, Endocitose e Diapedese. Somos do INFO 3V do campus Parnamirim e ficamos com a responsabilidade
-                de produzir uma <span class="sessao linkSessao">Biomaket</span> e este lindíssimo site, desenvolvido por: (nome dos compornentes do grupo)
+                Leucócitos, Endocitose e Diapedese, composto por Ananda Beatriz, Breno Gusmão, Fabiana Antunes e Júlio César. 
+                Somos de INFO 3V do campus Parnamirim e ficamos com a responsabilidade de produzir uma 
+                <span class="sessao linkSessao">Biomaket</span> e este lindíssimo site.
             </p>
         </div>
     </div>

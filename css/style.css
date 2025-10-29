@@ -302,3 +302,17 @@ video {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+
+footer{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    top: 60px;
+    margin-bottom: 100px;
+}
+
+footer p{
+    color: white;
+    padding: 5px 15px;
+    font-style: italic;
+}

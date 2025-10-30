@@ -28,7 +28,7 @@ const sobre = `
             <h1>Conheça a Phagosquad</h1>
         </div>
         <div class="body">
-            <img src="imgs/Phagosquad_logo.ico" alt="Logo Phagosquad">
+            <img src="../imgs/Phagosquad_logo.ico" alt="Logo Phagosquad">
             <p>
                 A <span class="sessao linkSessao">Phagosquad</span> é o grupo que apresentará o trabalho sobre a relação entre
                 Leucócitos, Endocitose e Diapedese, composto por <em>Ananda Beatriz, Breno Gusmão, Fabiana Antunes e Júlio César.</em> 
@@ -74,7 +74,7 @@ const biomarket = `
         </div>
         <div class="body">
             <p></p>
-            <img src="imgs/Prototipo.jpg" alt="Prototipo" id="prototipo"> 
+            <img src="../imgs/Prototipo.jpg" alt="Prototipo" id="prototipo"> 
         </div>
     </div>
     <div class="background-gif-bio"></div>`;

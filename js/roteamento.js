@@ -6,7 +6,7 @@ const inicial = `
         </div>
         <div class="body_video">
             <video controls>
-                <source src="videos/projeto.mp4" type="video/mp4">
+                <source src="../videos/projeto.mp4" type="video/mp4">
             </video>
             <p>
                 Os <span class="linkSessao">leucócitos</span>, também conhecidos como glóbulos brancos, são células do sangue responsáveis 

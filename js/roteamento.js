@@ -46,21 +46,21 @@ const materiais = `
             <h1>Lista de Materiais</h1>
         </div>
         <div class="body">
-            <p></p>
+            <p>Nossa Bio-Makat utilizou os seguintes materiais: </p>
+            <br/>
             <ol id="esquerda">
                 <li class="itemLista">Papelão grosso (base)</li>
                 <li class="itemLista">Papel alumínio</li>
                 <li class="itemLista">Fitas vermelhos</li>
-                <li class="itemLista">Massa de modelar branca, roxa e verde</li>
+                <li class="itemLista">Massa de EVA</li>
                 <li class="itemLista">Palito de churrasco</li>
                 <li class="itemLista">Papel/placas</li>
+                <li class="itemLista">Bolas de Isopor</li>
                 <li class="itemLista">Adesivos</li>
                 <li class="itemLista">Cola quente</li>
                 <li class="itemLista">Tesoura/estilete</li>
                 <li class="itemLista">Tinta</li>
-                <li class="itemLista">Papel Machê</li>
-                <li class="itemLista">Veniz</li>
-                <li class="itemLista">Ímas</li>                                        
+                <li class="itemLista">Papel Machê</li>                                     
             </ol>
         </div>
     </div>
@@ -73,8 +73,9 @@ const biomarket = `
             <h1>Biomaket</h1>
         </div>
         <div class="body">
-            <p></p>
-            <img src="imgs/Prototipo.jpg" alt="Prototipo" id="prototipo"> 
+            <p>Foto da Nossa Bio-maket: </p>
+            <br/>
+            <img src="imgs/Prototipo.jpg" alt="Prototipo" id="prototipo" alt="Foto da Bio-maket"> 
         </div>
     </div>
     <div class="background-gif-bio"></div>`;
